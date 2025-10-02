@@ -20,5 +20,19 @@ A Python application that detects 6 common code smells in Python source code.
 ## Usage
 
 ### Basic Usage
+
+- **With Configuration**:
 ```bash
-python smell_detector.py file1.py file2.py
+- python smell_detector.py --config my_config.yaml smell_code.py
+
+- **Enable Only Specific Smells**:
+```bash
+- python smell_detector.py --only LongMethod,MagicNumbers smell_code.py
+
+- **Exclude Specific Smells**:
+```bash
+- python smell_detector.py --exclude GodClass,DuplicatedCode smell_code.py
+
+- **Verbose Output**:
+```bash
+- python smell_detector.py --verbose smell_code.py
