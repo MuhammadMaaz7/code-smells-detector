@@ -1,0 +1,25 @@
+# Code Smell Detection Configuration
+
+LongMethod:
+  enabled: true
+  max_lines: 20  # Methods longer than this are considered "long"
+
+GodClass:
+  enabled: true
+  max_methods: 8   # Classes with more methods than this
+  max_attrs: 6     # Classes with more attributes than this
+
+DuplicatedCode:
+  enabled: true
+  min_duplication_lines: 5  # Minimum lines to consider as duplication
+
+LargeParameterList:
+  enabled: true
+  max_parameters: 5  # Functions with more parameters than this
+
+MagicNumbers:
+  enabled: true
+  excluded_numbers: [0, 1, -1, 100]  # Common numbers that are not "magic"
+
+FeatureEnvy:
+  enabled: true
